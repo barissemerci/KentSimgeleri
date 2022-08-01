@@ -24,11 +24,23 @@ class MainActivity : AppCompatActivity() {
         val kizKulesi = Landmark("Maiden's Tower", "Turkey", R.drawable.kizkulesi)
         val londonBridge = Landmark("London Bridge", "UK", R.drawable.londonbridge)
         val piramitler = Landmark("Egyptian Pyramids", "Egypt", R.drawable.piramitler)
+        val louvre = Landmark("Louvre Pyramid", "France", R.drawable.louvre)
+        val sydneyOpera = Landmark("Sydney Opera House", "Australia", R.drawable.sydneyopera)
+        val timesSquare = Landmark("Times Square", "USA", R.drawable.timessquare)
+        val treviFountain = Landmark("Trevi Fountain", "Italy", R.drawable.trevicesmesi)
+
+
+
 
         landmarkList.add(colleseum)
         landmarkList.add(kizKulesi)
         landmarkList.add(londonBridge)
         landmarkList.add(piramitler)
+        landmarkList.add(louvre)
+        landmarkList.add(sydneyOpera)
+        landmarkList.add(timesSquare)
+        landmarkList.add(treviFountain)
+
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         val landmarkAdapter = LandmarkAdapter(landmarkList)
         binding.recyclerView.addItemDecoration(
